@@ -1,7 +1,7 @@
 @use './_variables' as *;
 
 .problem {
-  padding: 100px 0;
+  padding: 226px 0 120px;
 
   &__inner {
     display: flex;
@@ -29,20 +29,14 @@
     }
   }
 
-  &__card {
-    max-width: 520px;
-    width: 100%;
-  }
-
   &__card-wrap {
-    display: grid;
-    justify-content: center;
     padding: 2px;
     background: linear-gradient(180deg, #5E01D5 16.2%, #FF8902 135%);
     border-radius: 16px;
     width: max-content;
     max-width: 100%;
     height: max-content;
+    max-width: 520px;
 
     @media (max-width: 750px) {
       width: 100%;
@@ -57,6 +51,7 @@
   border-radius: 16px;
   background: #000000;
   overflow: hidden;
+  width: 100%;
 
   &__header {
     display: flex;
