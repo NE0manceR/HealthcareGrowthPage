@@ -1,0 +1,48 @@
+@use './_variables' as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $main-bcg;
+  color: $white-text;
+  font-family: 'Raleway';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cta-btn {
+  width: max-content;
+  padding: 20px 58px;
+  color: $black-text;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: $white-text;
+  cursor: pointer;
+  transition: 0.3s;
+  line-height: 0.5;
+  border: none;
+
+  &:hover {
+    background-color: $main-color;
+    color: $white-text;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media (max-width: 1400px) {
+    padding: 0 20px;
+
+  }
+}
