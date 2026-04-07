@@ -1,0 +1,118 @@
+@use './_variables' as *;
+
+.problem {
+  padding: 100px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 750px) {
+      display: grid;
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    max-width: 600px;
+    color: $white-text;
+    font-family: Raleway;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin: 0;
+
+    @media (max-width: 950px) {
+      font-size: 36px;
+    }
+  }
+
+  &__card {
+    max-width: 520px;
+    width: 100%;
+  }
+
+  &__card-wrap {
+    display: grid;
+    justify-content: center;
+    padding: 2px;
+    background: linear-gradient(180deg, #5E01D5 16.2%, #FF8902 135%);
+    border-radius: 16px;
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+}
+
+.problem-card {
+  position: relative;
+  padding: 24px;
+  border-radius: 16px;
+  background: #000000;
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  &__avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__role {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  &__quote-icon {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+  }
+
+  &__text {
+    font-family: Biryani;
+    color: $gray-text;
+    font-size: 18px;
+    line-height: 160%;
+    margin: 0;
+
+    @media (max-width: 950px) {
+      font-size: 16px;
+    }
+
+    strong {
+      font-weight: 700;
+      color: $white-text;
+    }
+  }
+}

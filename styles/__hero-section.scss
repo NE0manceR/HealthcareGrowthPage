@@ -1,6 +1,7 @@
 @use './_variables' as *;
 
 .health-hero {
+  position: relative;
   overflow: hidden;
 
   .container {
