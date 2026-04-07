@@ -37,6 +37,13 @@ body {
   }
 }
 
+.gradient-text {
+  background: linear-gradient(269deg, #5E01D5 2.93%, #FF8902 111.75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
