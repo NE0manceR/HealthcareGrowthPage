@@ -113,10 +113,33 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(269deg, #5E01D5 2.93%, #FF8902 111.75%);
+  background: linear-gradient(
+    269deg,
+    #5E01D5 0%,
+    #FF8902 30%,
+    #5E01D5 40%,
+    #5E01D5 100%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: gradient-flash 10s ease-in-out infinite;
+}
+
+@keyframes gradient-flash {
+  0%, 60% {
+    background-position: 100% 0;
+  }
+
+  80% {
+    background-position: 0% 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .container {
