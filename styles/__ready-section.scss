@@ -1,0 +1,147 @@
+@use './_variables' as *;
+
+.ready {
+
+  .container {
+    position: relative;
+    display: grid;
+    justify-content: flex-end;
+    z-index: 1;
+
+    .cta-btn {
+      margin: 0 auto 16px;
+    }
+
+  }
+
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 100%, rgba(153, 153, 153, 0.09) 40%);
+  padding: 1px 0 1px;
+
+  &__wrap {
+    position: relative;
+    padding: 95px 0;
+    overflow: hidden;
+    background: #0D0D0D;
+
+    @media (max-width: 750px) {
+      padding: 56px 0 183px;
+    }
+
+  }
+
+  &__decor-img {
+    position: absolute;
+  }
+
+  &__decor2 {
+    width: 500px;
+    left: -10%;
+    bottom: -30%;
+
+    @media (max-width: 1000px) {
+      bottom: -40%;
+      left: -30%;
+    }
+
+
+    @media (max-width: 750px) {
+      width: 280px;
+      left: auto;
+      right: -20%;
+      bottom: -10%;
+    }
+  }
+
+  &__decor1 {
+    width: 700px;
+    top: 0;
+
+    @media (max-width: 1000px) {
+      transform: rotate(114deg);
+      left: -20%;
+    }
+
+    @media (max-width: 750px) {
+      transform: rotate(-651deg);
+      left: auto;
+      height: 600px;
+      right: -33%;
+      bottom: -53%;
+      top: auto;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 22px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 110%;
+    text-transform: uppercase;
+
+    @media (max-width: 750px) {
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+  }
+
+  &__title {
+    max-width: 650px;
+    text-align: center;
+    font-kerning: none;
+    font-family: Raleway;
+    font-size: 62px;
+    font-weight: 800;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin: 0 0 42px;
+
+    @media (max-width: 752px) {
+      font-size: 32px;
+      margin: 0 0 32px;
+    }
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    background-color: #261B0D;
+
+    img {
+      height: 16px;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__list-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    width: max-content;
+    margin: 0 auto 64px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+
+
+  }
+
+  &__info-text {
+    text-align: center;
+    font-family: Biryani;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}

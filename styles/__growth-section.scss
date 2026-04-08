@@ -2,6 +2,12 @@
 
 
 .growth {
+  padding-bottom: 260px;
+
+  @media (max-width: 750px) {
+    padding-bottom: 80px;
+  }
+
   .container {
     .cta-btn {
       margin: 0 auto;
