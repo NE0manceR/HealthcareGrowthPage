@@ -3,6 +3,10 @@
 .problem {
   padding: 226px 0 120px;
 
+  @media (max-width: 750px) {
+    padding-bottom: 80px;
+  }
+
   &__inner {
     display: flex;
     align-items: center;
