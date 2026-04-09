@@ -75,7 +75,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-bottom: 60px;
-    overflow: hidden;
 
     @media (max-width: 950px) {
       grid-template-columns: repeat(2, 1fr);
