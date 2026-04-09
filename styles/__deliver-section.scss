@@ -108,7 +108,7 @@
 
   &__img {
     position: relative;
-    min-height: 680;
+    min-height: 680px;
     border-radius: 18px;
     border: 1px solid $glass-border;
     background: $card-bcg;
@@ -134,7 +134,6 @@
     &:nth-child(1) {
       right: 0;
       top: 0;
-      background-color: red;
       border-bottom-left-radius: 40px;
       background: linear-gradient(135deg, #472310, #251B18);
     }
@@ -142,7 +141,6 @@
     &:nth-child(2) {
       left: 0;
       bottom: 0;
-      background-color: red;
       border-top-right-radius: 40px;
       background: linear-gradient(135deg, #271736, #171317);
     }
