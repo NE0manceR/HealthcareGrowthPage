@@ -58,7 +58,7 @@
 
   &__card {
     padding: 1px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 100%, rgba(153, 153, 153, 0.09) 40%);
+    background: $card-border-gradient;
     height: max-content;
     width: 100%;
     border-radius: 12px;
@@ -110,8 +110,8 @@
     position: relative;
     min-height: 680;
     border-radius: 18px;
-    border: 1px solid var(--Glass, rgba(255, 255, 255, 0.20));
-    background: #0A0A0A;
+    border: 1px solid $glass-border;
+    background: $card-bcg;
     overflow: hidden;
 
     @media (max-width: 1000px) {
@@ -157,7 +157,7 @@
     height: 90px;
     margin-bottom: 22px;
     border-radius: 9px;
-    background: linear-gradient(135deg, #F97316 0%, #C084FC 50%, #A855F7 75%, #F97316 100%);
+    background: linear-gradient(135deg, $gradient-orange 0%, $gradient-lilac 50%, $gradient-violet 75%, $gradient-orange 100%);
     background-size: 300% 300%;
     animation: gradient-shimmer 6s ease infinite;
 

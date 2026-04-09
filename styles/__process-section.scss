@@ -29,7 +29,7 @@
     grid-row: 1/-1;
     border-radius: 9px;
     border: 1px solid #000;
-    background: linear-gradient(159deg, #5E01D5 -34.65%, #FF8902 111.74%);
+    background: linear-gradient(159deg, $gradient-purple -34.65%, $second-color 111.74%);
     color: $black-text;
     font-family: Biryani;
     font-weight: 600;
@@ -102,7 +102,7 @@
   &__card {
     padding: 1px;
     border-radius: 18px;
-    background: linear-gradient(180deg, #5E01D5 16.2%, #FF8902 135%);
+    background: linear-gradient(180deg, $gradient-purple 16.2%, $second-color 135%);
   }
 
   &__card-content {
@@ -111,7 +111,7 @@
     height: 100%;
     padding: 24px;
     border-radius: 17px;
-    background-color: #0D0D0D;
+    background-color: $card-bcg-dark;
   }
 
   &__card-img {
@@ -120,7 +120,7 @@
     justify-content: center;
     width: 46px;
     height: 46px;
-    background-color: #252525;
+    background-color: $card-bcg-medium;
     border-radius: 9px;
 
     @media (max-width: 750px) {
@@ -181,7 +181,7 @@
     font-family: Biryani;
     line-height: 160%;
     padding-bottom: 24px;
-    border-bottom: 1px solid rgba(141, 141, 141, 0.40);
+    border-bottom: 1px solid $border-subtle;
 
     li::marker {
       color: $second-color;

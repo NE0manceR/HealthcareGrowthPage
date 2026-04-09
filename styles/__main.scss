@@ -115,10 +115,10 @@ body {
 .gradient-text {
   background: linear-gradient(
     269deg,
-    #5E01D5 0%,
-    #FF8902 30%,
-    #5E01D5 40%,
-    #5E01D5 100%
+    $gradient-purple 0%,
+    $second-color 30%,
+    $gradient-purple 40%,
+    $gradient-purple 100%
   );
   background-size: 300% 100%;
   background-position: 100% 0;
