@@ -43,7 +43,6 @@
     text-align: center;
     font-family: "Raleway";
     font-size: 32px;
-    font-style: normal;
     font-weight: 400;
     line-height: 130%;
     text-transform: uppercase;
@@ -107,28 +106,10 @@
     background: rgba(255, 137, 2, 0.04);
     transform: rotate(-7deg);
 
-    &:nth-child(2) {
-      transform: rotate(7deg);
-    }
-
-    &:nth-child(3) {
-      transform: rotate(-7deg);
-    }
-
-    &:nth-child(4) {
-      transform: rotate(7deg);
-    }
-
-    &:nth-child(5) {
-      transform: rotate(-7deg);
-    }
-
+    &:nth-child(2),
+    &:nth-child(4),
     &:nth-child(6) {
       transform: rotate(7deg);
-    }
-
-    &:nth-child(7) {
-      transform: rotate(-7deg);
     }
   }
 
@@ -157,7 +138,6 @@
     text-align: center;
     font-family: "Montserrat";
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 120%;
     margin-bottom: 16px;
