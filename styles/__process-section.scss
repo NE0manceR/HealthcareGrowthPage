@@ -12,6 +12,10 @@
   }
 
   .section-header__title {
+    @media (max-width: 1100px) {
+      max-width: 450px;
+    }
+
     @media (max-width: 750px) {
       span {
         display: block;
@@ -56,9 +60,10 @@
     text-align: left;
 
     @media (max-width: 750px) {
-      grid-template-columns: 70px 1fr;
+      grid-template-columns: minmax(70px, auto) 1fr;
       grid-template-rows: minmax(35px, auto) minmax(35px, auto);
       column-gap: 14px;
+      row-gap: 4px;
       margin-bottom: 32px;
     }
   }
@@ -87,6 +92,7 @@
   }
 
   &__block-header-title {
+    align-self: flex-end;
     font-family: Montserrat;
     font-size: 28px;
     font-style: normal;
