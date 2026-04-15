@@ -16,6 +16,16 @@
     padding-bottom: 70px;
   }
 
+  &__video-filter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
   &__video {
     position: absolute;
     inset: 0;
