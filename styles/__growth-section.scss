@@ -19,6 +19,7 @@
     border-radius: 10px;
     padding: 1px;
     transition: 0.3s;
+    overflow: hidden;
 
     &:hover {
       background: $second-color;
@@ -26,16 +27,30 @@
   }
 
   &__card-content {
+    position: relative;
     display: grid;
     justify-content: flex-start;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: $card-bcg;
     padding: 28px;
-    transition: 0.3s;
+    overflow: hidden;
+    z-index: 0;
 
-    &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      border-radius: 8px;
       background: linear-gradient(to top right, #0E0801, #0D0700);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: -1;
+    }
+
+    &:hover::before {
+      opacity: 1;
     }
   }
 
