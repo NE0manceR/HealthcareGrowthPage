@@ -1,6 +1,6 @@
 function initMobileScrollEffect() {
   const breakpoint = 750;
-  const cards = document.querySelectorAll('.recognize-card');
+  const cards = document.querySelectorAll('.recognize-card, .growth__card');
   let observer = null;
 
   function startObserver() {
@@ -13,7 +13,7 @@ function initMobileScrollEffect() {
           }
         });
       },
-      { threshold: 0.6 },
+      { threshold: 1 },
     );
 
     cards.forEach((card) => observer.observe(card));

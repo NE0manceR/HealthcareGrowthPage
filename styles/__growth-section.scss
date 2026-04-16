@@ -21,7 +21,8 @@
     transition: 0.3s;
     overflow: hidden;
 
-    &:hover {
+    &:hover,
+    &.active {
       background: $second-color;
     }
   }
@@ -47,7 +48,8 @@
       z-index: -1;
     }
 
-    &:hover::before {
+    &:hover::before,
+    .growth__card.active &::before {
       opacity: 1;
     }
   }
