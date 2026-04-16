@@ -68,7 +68,7 @@
     align-items: flex-start;
     column-gap: 16px;
     row-gap: 6px;
-    grid-template-rows: 28px 1fr;
+    grid-template-rows: minmax(28px, auto);
     background: $dark-bcg;
     padding: 18px;
     border-radius: 11px;
@@ -96,7 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-row: 1/-1;
+    grid-row: span 2;
     width: 56px;
     height: 56px;
     border-radius: 9px;
@@ -119,6 +119,7 @@
 
     @media (max-width: 750px) {
       width: 100%;
+      min-height: auto;
       height: 335px;
     }
   }
