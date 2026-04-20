@@ -75,10 +75,11 @@
   }
 
   &__avatar {
-    width: 62px;
-    height: 62px;
+    width: 63px;
+    height: 63px;
     border-radius: 50%;
     object-fit: cover;
+    border: 1px solid rgba(141, 141, 141, 0.40);
   }
 
   &__info {
